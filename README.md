@@ -10,7 +10,7 @@ Vous pouvez utiliser l'IDE de votre choix pour le développement de l'applicatio
 Vous avez plusieurs choix pour la création d'un projet, vous pouvez partir sur du `javascript`, `typescript`, `angular` ou `vue.js`.
 Les commandes de création se trouvent ici: https://docs.nativescript.org/tooling/docs-cli/project/creation/create
 
-Je vous conseille de partir sur un projet `javascript` pour commencer à comprendre les bases du framework: `$ tns create MyApp --js`
+Je vous conseille de partir sur un projet `typescript` pour commencer à comprendre les bases du framework: `$ tns create MyApp --js`
 
 Je vous conseille grandement de lire cette page de doc afin de vous familiariser avec la structure de votre application: https://docs.nativescript.org/core-concepts/project-structure
 
@@ -21,14 +21,22 @@ Pour tester votre application, vous avez plusieurs choix:
 
 Pour effectuer l'installation d'un émulateur android: 
 -   `cd $android_home/tools/bin`
--   `sdkmanager "system-images;android-25;google_apis;x86"`
+-   `sdkmanager "system-images;android-23;google_apis;x86_64"`
+-   `sdkmanager emulator`
 -   `sdkmanager --licenses`
--   `avdmanager create avd -n MyEmulator -k "system-images;android-25;google_apis;x86"`
+-   `avdmanager create avd -n MyEmulator -k "system-images;android-23;google_apis;x86_64"`
+
+Si vous rencontrer des erreurs lors du démarrage du projet sur émulateur:
+-   Essayer de lancer l'émulateur manuellement avec `emulator @MyEmulator` puis de lancer le projet nativescript.
+-   Si une erreur qt apparait, lancer la commande `emulator @MyEmulator` dans `$android_home/tools/`
+-   Pour ceux sur Windows qui ont une erreur d'hardware acceleration, installer [ceci](https://github.com/intel/haxm/releases)
+-   Ensuite faire appel à vos camarades, google ou moi même :) 
 
 ### Matériel à apporter
 
 -   Téléphone android (Deboggage USB et options développeurs activées)
 -   Cable USB pour brancher le téléphone au PC 
+-   Avoir déjà créer un projet nativescript vide et avoir réussi à le lancer sur son téléphone/émulateur
 
 Le matériel est optionnel bien évidemment, l'émulateur peut faire l'affaire mais c'est toujours plus agréable de tester en live sur son téléphone.
 
@@ -47,10 +55,8 @@ Ce projet consiste à réaliser une application contenant les pages suivantes:
 
 Vous retrouverez les instructions de ce projet [ici](./Actualite/README.md)
 
-#### Projet Mario
+#### Projet Pong
 
-Ce projet consiste à réaliser un petit mario.
+Ce projet consiste à réaliser un petit Pong.
 
-Voici la liste des fonctionnalitées que nous implémenterons:
-
-Vous retrouverez les instructions de ce projet [ici](./Mario/README.md)
+Vous retrouverez les instructions de ce projet [ici](./Pong/README.md)
