@@ -10,7 +10,7 @@ Vous pouvez utiliser l'IDE de votre choix pour le développement de l'applicatio
 Vous avez plusieurs choix pour la création d'un projet, vous pouvez partir sur du `javascript`, `typescript`, `angular` ou `vue.js`.
 Les commandes de création se trouvent ici: https://docs.nativescript.org/tooling/docs-cli/project/creation/create
 
-Je vous conseille de partir sur un projet `typescript` pour commencer à comprendre les bases du framework: `$ tns create MyApp --js`
+Je vous conseille de partir sur un projet `typescript` pour commencer à comprendre les bases du framework: `$ tns create MyApp --ts`
 
 Je vous conseille grandement de lire cette page de doc afin de vous familiariser avec la structure de votre application: https://docs.nativescript.org/core-concepts/project-structure
 
