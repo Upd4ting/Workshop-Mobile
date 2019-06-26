@@ -2,8 +2,8 @@
 
 ### Installation de l'environnement NativeScript 
 
-Nous allons procéder à l'installation de `NativeScript` pour celà suiver les instructions suivantes: https://docs.nativescript.org/start/ns-setup-linux.
-Pour les personnes étant sur `Windows`, l'installation se trouve ici: https://docs.nativescript.org/angular/start/quick-setup
+Nous allons procéder à l'installation de `NativeScript` pour cela suivez les instructions suivantes: https://docs.nativescript.org/start/ns-setup-linux.
+Pour les personnes étant sur `Windows`, l'installation se trouve ici: https://docs.nativescript.org/angular/start/quick-setup#full-setup
 
 Vous pouvez utiliser l'IDE de votre choix pour le développement de l'application mobile, pour ma part je vous conseille `VSCode` en installant juste le module `NativeScript` et `nativescript-cli`
 
