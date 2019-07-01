@@ -1,0 +1,11 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+	<Page.actionBar>
+		<ActionBar title="Pong Game" icon="" class="action-bar">
+		</ActionBar>
+	</Page.actionBar>
+
+	<StackLayout class="p-20">
+		<Button text="JOUER" tap="{{ onPlay }}" class="btn btn-primary btn-active"/>
+		<Button text="QUITTER" tap="{{ onQuit }}" class="btn btn-primary btn-active"/>
+	</StackLayout>
+</Page>

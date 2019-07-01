@@ -1,0 +1,9 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+    <StackLayout class="p-20">
+        <Label text="Connexion" class="h1 text-center"/>
+		<TextField hint="NOM D'UTILISATEUR" Autocapitalization="none" text="{{ login }}" secure="false" autocorrect="false" maxLength="30" class="input input-rounded m-20 p-x-20 uppercase "></TextField>
+		<TextField hint="MOT DE PASSE" Autocapitalization="none" text="{{ password }}" secure="true" autocorrect="false" maxLength="30" class="input input-rounded m-20 p-x-20 uppercase"></TextField>
+        <Button text="Se connecter" tap="{{ onConnect }}" class="btn btn-primary btn-active"/>
+		<Button text="S'inscrire" tap="{{ goRegister }}" class="btn btn-primary btn-active"/>
+    </StackLayout>
+</Page>
