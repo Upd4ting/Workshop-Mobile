@@ -9,27 +9,45 @@ WARNING: Les personnes sous MAC, je leurs conseille vivement d'emprunter un ordi
 WARNING: `$USER` est à chaque fois à remplacer par votre nom d'utilisateur
 
 -	Activer la technologie de virtualisation dans le bios
+
 	Aller dans le bios
+	
 	Avancé
+	
 	Configuration des périphériques
+	
 	Cocher "Technologie de virtualisation"
+	
 	Redémarrer le PC
+	
 -	`sudo apt-get install nodejs`
 -	`sudo apt-get install lib32z1 lib32ncurses5 libbz2-1.0:i386 libstdc++6:i386`
 -	`sudo apt-get install g++`
 -	`sudo apt-get install openjdk-8-jdk`
 -	Il nous faut maintenant mettre la variable d'environnement JAVA_HOME
+
 	Ouvrir `./bashrc`
+	
 	Ajouter cette ligne: `export JAVA_HOME=$(update-alternatives --query javac | sed -n -e 's/Best: (.)/bin/javac/\1/p')`
+	
 	Ensuite téléchargez ce fichier: https://www27.zippyshare.com/v/uHpKn0TX/file.html
+	
 	On extrait le zip et on move le dossier tools dans `/usr/lib/android/sdk`
+	
 	Clique droit sur le fichier, extraire ici
+	
 	On créer le dossier `/android/sdk` avec la commande `sudo mkdir -p /usr/lib/android/sdk`
+	
 	On move le dossier `tools` dedans  en faisant `sudo mv ./tools/ /usr/lib/android/sdk`
+	
 	On ouvre le `.bashrc` et on y ajoute les lignes suivantes:
+	
 	`export ANDROID_HOME="/usr/lib/android/sdk/"`
+	
 	`export PATH="${PATH}:${ANDROID_HOME}tools/bin/"`
+	
 	On redémarre le terminal
+	
 -	`sudo $ANDROID_HOME/tools/bin/sdkmanager "tools" "emulator" "platform-tools" "platforms;android-28" "build-tools;28.0.3" "extras;android;m2repository" "extras;google;m2repository"`
 -	`sudo $ANDROID_HOME/tools/bin/sdkmanager "system-images;android-23;google_apis;x86_64"`
 -	`sudo $ANDROID_HOME/tools/bin/sdkmanager emulator`
